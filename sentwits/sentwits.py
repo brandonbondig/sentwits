@@ -3,18 +3,19 @@ import collections
 
 class COMMENTS:
 
-    def __init__(self,ticker,timeframe):
+    def __init__(self,ticker,timeframe,limit):
         self.ticker = ticker
         self.timeframe = timeframe
+        self.limit = limit
 
-    def stocktwits_comment_sentiment(self, limit=30):
-        if limit > 30:
+    def stocktwits_comment_sentiment(self):
+        if self.limit > 30:
             limit = 30
 
         sentiment = []
 
         url = requests.get(
-            'https://api.stocktwits.com/api/2/streams/symbol/{}.json?filter=all&limit={}'.format(self.ticker, limit))
+            'https://api.stocktwits.com/api/2/streams/symbol/{}.json?filter=all&limit={}'.format(self.ticker, self.limit))
         api = url.json()
 
         for x in range(limit):
