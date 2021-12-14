@@ -53,7 +53,7 @@ COMMENTS:
 
     from sentwits import COMMENTS, SENTIMENT
 
-    >>> s = COMMENTS('TSLA').stocktwits_comment_sentiment()
+    >>> s = COMMENTS('TSLA',limit=30).stocktwits_comment_sentiment()
 
     >>> print(s)
     
