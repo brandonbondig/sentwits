@@ -1,7 +1,7 @@
 Sentwits: Stocktwits Sentiment Analysis Tool.
 --------------------------------------------
 
-Sentwits is a python 3 library build to scrape sentiment data directly from Stocktwits.
+Sentwits is a python 3 library, build to scrape sentiment data directly from Stocktwits.
 Get live sentiment data and comment updates for: Stocks, crypto and other assets offered by StockTwits.
 Minimal input is required from the user, so user friendliness is at its best.
 
