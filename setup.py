@@ -1,10 +1,10 @@
 from setuptools import setup
 
 setup(
-    name='sentwits',
-    version='0.0.2',
+    name='Sentwits',
+    version='0.0.3',
     description='Real-time sentiment Stocktwits analysis tool',
-    url='https://github.com/mcdallas/wallstreet',
+    url='https://github.com/brandonbondig/sentwits',
     author='Brandon Bondig',
     author_email='brandon@bondig.dk',
     license='MIT',
@@ -32,5 +32,5 @@ setup(
         'Programming Language :: Python :: 3.5',
     ],
     keywords='stocks analysis finance market shares stocktwits sentiment real-time',
-    install_requires=['requests', 'setuptools'],
+    install_requires=['requests', 'setuptools', 'pandas'],
 )

@@ -1,8 +1,8 @@
-from sentwits.sentwits import COMMENTS, SENTIMENT
+from sentwits.sentwits import COMMENTS, SENTIMENT, USER, GENERAL
 from pkg_resources import get_distribution, DistributionNotFound
 import os.path
 
-__all__ = ['COMMENTS','SENTIMENT']
+__all__ = ['COMMENTS', 'SENTIMENT', 'USER', 'GENERAL']
 
 try:
     _dist = get_distribution('sentwits')
